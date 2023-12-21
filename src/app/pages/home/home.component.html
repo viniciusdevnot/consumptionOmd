@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="titulo">
+    <h1 class="titulo1">Pesquise seu filme aqui</h1>
+  </div>
+  <div class="pesquisa">
+    <div class="input-box">
+      <input class="input-txt" placeholder="Digite algo" (keyup)="getFilme($event)">
+      <a class="input-btn">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+    <div class="botoes">
+      <button class="button1" (click)="reset()">Reset</button>
+    </div>
+
+  </div>
+  <div class="filmes">
+    <ul class="containerUl" *ngFor="let filme of filmes">
+      <img class="imagem" [src]="filme.Poster" alt="{{ filme.Title }} Poster">
+      <div>
+        <li class="titleLi">{{ filme.Title }}</li>
+        <li class="titleLi">{{ filme.Year }}</li>
+        <li class="titleLi">{{ filme.Type }}</li>
+      </div>
+    </ul>
+  </div>
+</div>

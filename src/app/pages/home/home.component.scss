@@ -1,0 +1,280 @@
+.container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #383838;
+  flex-direction: column;
+}
+
+.pesquisa{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 60px;
+  margin-top: 50px;
+  margin-left: 10%;
+}
+
+@media (max-width: 600px) {
+  .pesquisa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 10%;
+  }
+}
+
+
+.titulo{
+  display: flex;
+  width: 100%;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.titulo1{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fefefe;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 600px) {
+  .titulo1 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fefefe;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
+
+
+h1, h2 {
+  font-family: Lato;
+}
+
+.input-box{
+  background: rgb(255, 255, 255);
+  outline: none;
+  padding:10px;
+  border-radius: 40px;
+  transition:0.4s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .input-box {
+    background: rgb(255, 255, 255);
+  outline: none;
+  padding:10px;
+  border-radius: 40px;
+  transition:0.4s;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+}
+
+
+
+.input-box .input-txt{
+  background: none;
+  border:none;
+  outline:none;
+  width: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color:rgb(0, 0, 0);
+  transition: 0.4s;
+  font-family: 'Courier New', Courier, monospace;
+}
+.input-box .input-btn{
+  background: none;
+  width: 10px;
+  height: 10px;
+  line-height: 25px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  outline:none;
+  transition: 0.4s;
+}
+
+
+@media (max-width: 600px) {
+  .input-box .input-btn{
+    background: none;
+    width: 5px;
+    height: 5px;
+    line-height: 25px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    outline:none;
+    transition: 0.4s;
+  }
+}
+.input-btn i{
+  color:rgb(255, 153, 0);
+}
+.input-box:hover>.input-txt{
+  width: 130px;
+    padding:5px;
+}
+
+@media (max-width: 600px) {
+  .input-box:hover>.input-txt{
+    width: 130px;
+      padding: 1px;
+  }
+}
+
+.input-box:hover>.input-btn{
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.button1{
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  margin-left: 50px;
+  margin-right: 0px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  transition-duration: 0.4s;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .button1 {
+    width: 130px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 0px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    transition-duration: 0.4s;
+    font-weight: 600;
+  }
+}
+
+.button1:hover{
+  background-color: #b6b6b6;
+}
+
+.filmes{
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+
+  overflow-y: scroll;
+  flex-wrap: nowrap
+}
+
+@media (max-width: 600px) {
+  .filmes{
+
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    width: 70%;
+    height: 100%;
+    overflow-y: scroll;
+    flex-wrap: nowrap
+  }
+}
+.containerUl{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.imagem{
+  width: 350px;
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+  .imagem{
+    width: 300px;
+    height: 350px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .imagem{
+    width: 250px;
+    height: 320px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 350px) {
+  .imagem{
+    width: 250px;
+    height: 300px;
+    margin-bottom: 50px;
+  }
+}
+
+.titleLi{
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .titleLi {
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+  }
+}
+
+
+// button effect
