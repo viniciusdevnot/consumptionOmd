@@ -15,13 +15,12 @@
 
   </div>
   <div class="filmes">
-    <ul class="containerUl" *ngFor="let filme of filmes">
-      <img class="imagem" [src]="filme.Poster" alt="{{ filme.Title }} Poster">
-      <div>
-        <li class="titleLi">{{ filme.Title }}</li>
-        <li class="titleLi">{{ filme.Year }}</li>
-        <li class="titleLi">{{ filme.Type }}</li>
-      </div>
+    <ul class="card bg-dark text-white list-group"  *ngFor="let filme of filmes">
+      <img class="list-group-item" [src]="filme.Poster" alt="{{ filme.Title }} Poster">
+        <li class="list-group-item">{{ filme.Title }}</li>
+        <li class="list-group-item">{{ filme.Year }}</li>
+        <li class="list-group-item">{{ filme.Type }}</li>
+
     </ul>
   </div>
 </div>

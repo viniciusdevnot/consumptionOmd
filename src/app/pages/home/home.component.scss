@@ -1,6 +1,6 @@
 .container{
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: 90vh;
   background-color: #383838;
   flex-direction: column;
@@ -15,6 +15,7 @@
   height: 60px;
   margin-top: 50px;
   margin-left: 10%;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 600px) {
@@ -191,23 +192,30 @@ h1, h2 {
   }
 }
 
+.card{
+max-width: 400px;
+
+img{
+  width: 100%;
+  height: 100%;
+}
+}
 .button1:hover{
   background-color: #b6b6b6;
 }
 
 .filmes{
+  display: flex;
   overflow-x: hidden;
   overflow-y: hidden;
 
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
+  flex-direction: row;
+  max-width: 80%;
   height: 100%;
-  margin-left: 10%;
-
+  overflow-x: scroll;
   overflow-y: scroll;
-  flex-wrap: nowrap
+  flex-wrap: wrap;
+  margin-left: 10%;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -235,14 +243,13 @@ h1, h2 {
   .filmes{
 
     overflow-y: hidden; /* Hide vertical scrollbar */
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
-    width: 70%;
+    max-width: 100%;
     height: 100%;
+
     overflow-y: scroll;
-    flex-wrap: nowrap
+
   }
 }
 .containerUl{
@@ -256,7 +263,7 @@ h1, h2 {
 .imagem{
   width: 350px;
   height: 350px;
-  margin-bottom: 50px;
+
 }
 
 @media (max-width: 600px) {
