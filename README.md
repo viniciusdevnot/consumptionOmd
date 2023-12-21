@@ -8,6 +8,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
+## Rodar Projeto 
+
+instale as dependencia via npm ou yarn, vai da sua escolha, se o comando npm i nao funcionar, favor rodar o comando "npm i --legacy-peer-deps" depois e só rodar o projeto com "npm start"
+
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
